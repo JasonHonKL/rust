@@ -1,0 +1,30 @@
+{
+  "name": "code-editor",
+  "version": "1.0.0",
+  "description": "A text editor with AI capabilities similar to Cursor AI",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "package": "electron-builder"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^25.0.0",
+    "electron-builder": "^24.4.0"
+  },
+  "dependencies": {
+    "monaco-editor": "^0.41.0",
+    "xterm": "^5.2.1",
+    "node-pty": "^0.10.1",
+    "split.js": "^1.6.5"
+  },
+  "build": {
+    "appId": "com.example.code-editor",
+    "productName": "Code Editor",
+    "directories": {
+      "output": "dist"
+    }
+  }
+}

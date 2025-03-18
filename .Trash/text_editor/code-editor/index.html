@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Code Editor</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" data-name="vs/editor/editor.main" href="node_modules/monaco-editor/min/vs/editor/editor.main.css">
+  <link rel="stylesheet" href="node_modules/xterm/css/xterm.css">
+</head>
+<body>
+  <div id="app-container">
+    <div id="top-container">
+      <div id="file-explorer" class="panel">
+        <div class="panel-header">
+          <h3>Explorer</h3>
+          <button id="open-folder-btn">Open Folder</button>
+        </div>
+        <div id="file-tree"></div>
+      </div>
+      
+      <div id="editor-container" class="panel">
+        <div class="panel-header">
+          <div id="tabs-container"></div>
+        </div>
+        <div id="editor"></div>
+      </div>
+      
+      <div id="chat-panel" class="panel">
+        <div class="panel-header">
+          <h3>AI Assistant</h3>
+        </div>
+        <div id="chat-messages"></div>
+        <div id="chat-input-container">
+          <textarea id="chat-input" placeholder="Ask AI for help..."></textarea>
+          <button id="send-chat-btn">Send</button>
+        </div>
+      </div>
+    </div>
+    
+    <div id="terminal-container" class="panel">
+      <div class="panel-header">
+        <h3>Terminal</h3>
+      </div>
+      <div id="terminal"></div>
+    </div>
+  </div>
+
+  <!-- Required scripts -->
+  <script>var exports = {};</script>
+  <script src="node_modules/monaco-editor/min/vs/loader.js"></script>
+  <script src="node_modules/xterm/lib/xterm.js"></script>
+  <script src="node_modules/split.js/dist/split.min.js"></script>
+  <script src="renderer.js" type="module"></script>
+</body>
+</html>
