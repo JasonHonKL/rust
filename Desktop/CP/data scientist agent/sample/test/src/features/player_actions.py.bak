@@ -1,0 +1,52 @@
+# src/features/player_actions.py
+
+class PlayerActions:
+    def __init__(self):
+        self.is_jumping = False
+        self.is_shooting = False
+
+    def handle_input(self, input_event):
+        """
+        Detects and processes player input for jumping and shooting actions.
+        
+        Args:
+            input_event: The input event to be processed (e.g., key press, button click).
+        """
+        if input_event == "jump":
+            self.jump()
+        elif input_event == "shoot":
+            self.shoot()
+
+    def jump(self):
+        """
+        Executes the jump action for the player.
+        """
+        if not self.is_jumping:
+            self.is_jumping = True
+            # Logic to make the player jump (e.g., apply upward force)
+            print("Player is jumping!")
+            # Reset jumping state after jump is complete
+            self.is_jumping = False
+
+    def shoot(self):
+        """
+        Executes the shoot action for the player.
+        """
+        if not self.is_shooting:
+            self.is_shooting = True
+            # Logic to make the player shoot (e.g., spawn a projectile)
+            print("Player is shooting!")
+            # Reset shooting state after shoot is complete
+            self.is_shooting = False
+
+    def update(self):
+        """
+        Updates the state of player actions. This method should be called in the game loop.
+        """
+        # Additional logic for managing ongoing actions (e.g., cooldowns, animations)
+        pass
+
+# Example usage:
+# player_actions = PlayerActions()
+# player_actions.handle_input("jump")
+# player_actions.handle_input("shoot")

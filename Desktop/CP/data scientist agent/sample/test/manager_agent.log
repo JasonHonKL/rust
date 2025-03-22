@@ -1,0 +1,256 @@
+2025-03-22 11:31:56,874 - ManagerAgent - INFO - Initializing ManagerAgent
+2025-03-22 11:31:56,874 - ManagerAgent - INFO - Creating decision agent
+2025-03-22 11:31:56,884 - ManagerAgent - INFO - Creating generate agent
+2025-03-22 11:31:56,893 - ManagerAgent - INFO - Creating execute agent
+2025-03-22 11:31:56,893 - ManagerAgent - INFO - Creating action executor
+2025-03-22 11:31:56,893 - ManagerAgent - INFO - Creating query analyzer
+2025-03-22 11:31:56,893 - ManagerAgent - INFO - Creating graph builder
+2025-03-22 11:31:56,893 - ManagerAgent - INFO - ManagerAgent initialization complete
+2025-03-22 11:32:10,193 - ManagerAgent - INFO - Building graph in parallel for project: /Users/newtonalbert/Desktop/CP/data scientist agent/sample/test
+2025-03-22 11:32:10,193 - ManagerAgent - INFO - Acquired graph lock for parallel building
+2025-03-22 11:33:15,770 - ManagerAgent - INFO - Built graph with 16 nodes
+2025-03-22 11:33:15,774 - ManagerAgent - INFO - Processing query: '"debug the program now when game over i can't restart"' for project: /Users/newtonalbert/Desktop/CP/data scientist agent/sample/test
+2025-03-22 11:33:15,774 - ManagerAgent - DEBUG - Checking if directory is empty: /Users/newtonalbert/Desktop/CP/data scientist agent/sample/test
+2025-03-22 11:33:15,775 - ManagerAgent - DEBUG - Directory contains 4 items
+2025-03-22 11:33:15,775 - ManagerAgent - DEBUG - Directory contains non-hidden files
+2025-03-22 11:33:15,775 - ManagerAgent - INFO - Is empty project: False
+2025-03-22 11:33:15,775 - ManagerAgent - INFO - Existing graph provided: True
+2025-03-22 11:33:15,775 - ManagerAgent - INFO - Initializing TodoManager
+2025-03-22 11:33:15,842 - ManagerAgent - INFO - TodoManager initialized with 10 tools
+2025-03-22 11:33:15,842 - ManagerAgent - INFO - Finding starting node in the graph
+2025-03-22 11:33:30,849 - ManagerAgent - ERROR - Error processing query: 'ClassNode' object has no attribute 'key'
+Traceback (most recent call last):
+  File "/Users/newtonalbert/Desktop/CP/data scientist agent/knowledge_graph_llm/knowledge_graph_llm/src/agents/manager_agent.py", line 197, in process_query
+    self.logger.info(f"Found starting node: {starting_node.key}")
+                                             ^^^^^^^^^^^^^^^^^
+AttributeError: 'ClassNode' object has no attribute 'key'
+2025-03-22 11:34:31,669 - ManagerAgent - INFO - Processing query: '"debug the program now when game over i can't restart"' for project: /Users/newtonalbert/Desktop/CP/data scientist agent/sample/test
+2025-03-22 11:34:31,671 - ManagerAgent - DEBUG - Checking if directory is empty: /Users/newtonalbert/Desktop/CP/data scientist agent/sample/test
+2025-03-22 11:34:31,672 - ManagerAgent - DEBUG - Directory contains 5 items
+2025-03-22 11:34:31,673 - ManagerAgent - DEBUG - Directory contains non-hidden files
+2025-03-22 11:34:31,673 - ManagerAgent - INFO - Is empty project: False
+2025-03-22 11:34:31,673 - ManagerAgent - INFO - Existing graph provided: True
+2025-03-22 11:34:31,673 - ManagerAgent - INFO - Updating graph in existing TodoManager
+2025-03-22 11:34:31,674 - ManagerAgent - INFO - Finding starting node in the graph
+2025-03-22 11:34:48,771 - ManagerAgent - ERROR - Error processing query: 'ClassNode' object has no attribute 'key'
+Traceback (most recent call last):
+  File "/Users/newtonalbert/Desktop/CP/data scientist agent/knowledge_graph_llm/knowledge_graph_llm/src/agents/manager_agent.py", line 197, in process_query
+    self.logger.info(f"Found starting node: {starting_node}")
+                                             ^^^^^^^^^^^^^^^^
+AttributeError: 'ClassNode' object has no attribute 'key'
+2025-03-22 11:36:58,167 - ManagerAgent - INFO - Initializing ManagerAgent
+2025-03-22 11:36:58,168 - ManagerAgent - INFO - Creating decision agent
+2025-03-22 11:36:58,177 - ManagerAgent - INFO - Creating generate agent
+2025-03-22 11:36:58,187 - ManagerAgent - INFO - Creating execute agent
+2025-03-22 11:36:58,187 - ManagerAgent - INFO - Creating action executor
+2025-03-22 11:36:58,187 - ManagerAgent - INFO - Creating query analyzer
+2025-03-22 11:36:58,187 - ManagerAgent - INFO - Creating graph builder
+2025-03-22 11:36:58,187 - ManagerAgent - INFO - ManagerAgent initialization complete
+2025-03-22 11:37:14,852 - ManagerAgent - INFO - Building graph in parallel for project: /Users/newtonalbert/Desktop/CP/data scientist agent/sample/test
+2025-03-22 11:37:14,853 - ManagerAgent - INFO - Acquired graph lock for parallel building
+2025-03-22 11:38:21,266 - ManagerAgent - INFO - Built graph with 16 nodes
+2025-03-22 11:38:21,272 - ManagerAgent - INFO - Processing query: '"debug this program now after game over there is not start again button"' for project: /Users/newtonalbert/Desktop/CP/data scientist agent/sample/test
+2025-03-22 11:38:21,272 - ManagerAgent - DEBUG - Checking if directory is empty: /Users/newtonalbert/Desktop/CP/data scientist agent/sample/test
+2025-03-22 11:38:21,273 - ManagerAgent - DEBUG - Directory contains 5 items
+2025-03-22 11:38:21,273 - ManagerAgent - DEBUG - Directory contains non-hidden files
+2025-03-22 11:38:21,273 - ManagerAgent - INFO - Is empty project: False
+2025-03-22 11:38:21,273 - ManagerAgent - INFO - Existing graph provided: True
+2025-03-22 11:38:21,274 - ManagerAgent - INFO - Initializing TodoManager
+2025-03-22 11:38:21,340 - ManagerAgent - INFO - TodoManager initialized with 10 tools
+2025-03-22 11:38:21,340 - ManagerAgent - INFO - Finding starting node in the graph
+2025-03-22 11:38:38,809 - ManagerAgent - INFO - Found starting node: <src.node.class_node.ClassNode object at 0x106f5dfd0>
+2025-03-22 11:38:38,810 - ManagerAgent - INFO - Processing query with todo manager
+2025-03-22 11:38:38,810 - ManagerAgent - INFO - Processing query with TodoManager: "debug this program now after game over there is not start again button"
+2025-03-22 11:38:38,810 - ManagerAgent - INFO - Executing tasks with TodoManager
+2025-03-22 11:39:13,859 - ManagerAgent - INFO - Task execution result: Completed 0 tasks, 5 tasks failed
+2025-03-22 11:39:13,860 - ManagerAgent - INFO - Tasks completed: 0/5
+2025-03-22 11:39:13,860 - ManagerAgent - INFO - Determining action based on query
+2025-03-22 11:39:23,792 - ManagerAgent - INFO - Decided action: debug
+2025-03-22 11:39:23,794 - ManagerAgent - INFO - Explanation: The user's query indicates that there is an issue with the program where a 'start again' button is missing after the game over state. This suggests a potential bug or missing functionality in the code that needs to be identified and fixed. The 'debug' action is appropriate as it involves analyzing the code to find and resolve the issue.
+2025-03-22 11:39:23,794 - ManagerAgent - INFO - Query processing result: Completed 0 tasks, 5 tasks failed
+2025-03-22 11:53:14,326 - ManagerAgent - INFO - Initializing ManagerAgent
+2025-03-22 11:53:14,326 - ManagerAgent - INFO - Creating decision agent
+2025-03-22 11:53:14,336 - ManagerAgent - INFO - Creating generate agent
+2025-03-22 11:53:14,345 - ManagerAgent - INFO - Creating execute agent
+2025-03-22 11:53:14,346 - ManagerAgent - INFO - Creating action executor
+2025-03-22 11:53:14,346 - ManagerAgent - INFO - Creating query analyzer
+2025-03-22 11:53:14,346 - ManagerAgent - INFO - Creating graph builder
+2025-03-22 11:53:14,346 - ManagerAgent - INFO - ManagerAgent initialization complete
+2025-03-22 11:53:32,803 - ManagerAgent - INFO - Building graph in parallel for project: /Users/newtonalbert/Desktop/CP/data scientist agent/sample/test
+2025-03-22 11:53:32,805 - ManagerAgent - INFO - Acquired graph lock for parallel building
+2025-03-22 11:54:37,227 - ManagerAgent - INFO - Built graph with 16 nodes
+2025-03-22 11:54:37,229 - ManagerAgent - INFO - Processing query: '"debug the programm now after game over it can't restart'' for project: /Users/newtonalbert/Desktop/CP/data scientist agent/sample/test
+2025-03-22 11:54:37,230 - ManagerAgent - DEBUG - Checking if directory is empty: /Users/newtonalbert/Desktop/CP/data scientist agent/sample/test
+2025-03-22 11:54:37,230 - ManagerAgent - DEBUG - Directory contains 5 items
+2025-03-22 11:54:37,230 - ManagerAgent - DEBUG - Directory contains non-hidden files
+2025-03-22 11:54:37,230 - ManagerAgent - INFO - Is empty project: False
+2025-03-22 11:54:37,230 - ManagerAgent - INFO - Existing graph provided: True
+2025-03-22 11:54:37,230 - ManagerAgent - INFO - Initializing TodoManager
+2025-03-22 11:54:37,284 - ManagerAgent - INFO - TodoManager initialized with 10 tools
+2025-03-22 11:54:37,284 - ManagerAgent - INFO - Finding starting node in the graph
+2025-03-22 11:54:52,050 - ManagerAgent - INFO - Found starting node: <src.node.class_node.ClassNode object at 0x106af7ad0>
+2025-03-22 11:54:52,050 - ManagerAgent - INFO - Processing query with todo manager
+2025-03-22 11:54:52,051 - ManagerAgent - INFO - Processing query with TodoManager: "debug the programm now after game over it can't restart'
+2025-03-22 11:54:52,051 - ManagerAgent - INFO - Executing tasks with TodoManager
+2025-03-22 11:59:41,044 - ManagerAgent - INFO - Task execution result: Completed 3 tasks, 4 tasks failed
+2025-03-22 11:59:41,045 - ManagerAgent - INFO - Tasks completed: 3/7
+2025-03-22 11:59:41,045 - ManagerAgent - INFO - Determining action based on query
+2025-03-22 11:59:50,036 - ManagerAgent - INFO - Decided action: debug
+2025-03-22 11:59:50,037 - ManagerAgent - INFO - Explanation: The user's query indicates that there is an issue with the program not being able to restart after a game over. This suggests that there is a bug or logical error in the code that needs to be identified and fixed. The 'debug' action is the most appropriate as it involves analyzing the code to find and resolve the issue.
+2025-03-22 11:59:50,037 - ManagerAgent - INFO - Query processing result: Completed 3 tasks, 4 tasks failed
+2025-03-22 12:39:19,411 - ManagerAgent - INFO - Processing query: '"the user new can not fire a shot to other opponent, it also can't jump'' for project: /Users/newtonalbert/Desktop/CP/data scientist agent/sample/test
+2025-03-22 12:39:19,418 - ManagerAgent - DEBUG - Checking if directory is empty: /Users/newtonalbert/Desktop/CP/data scientist agent/sample/test
+2025-03-22 12:39:19,419 - ManagerAgent - DEBUG - Directory contains 6 items
+2025-03-22 12:39:19,419 - ManagerAgent - DEBUG - Directory contains non-hidden files
+2025-03-22 12:39:19,419 - ManagerAgent - INFO - Is empty project: False
+2025-03-22 12:39:19,419 - ManagerAgent - INFO - Existing graph provided: True
+2025-03-22 12:39:19,419 - ManagerAgent - INFO - Updating graph in existing TodoManager
+2025-03-22 12:39:19,419 - ManagerAgent - INFO - Finding starting node in the graph
+2025-03-22 12:39:35,945 - ManagerAgent - INFO - Found starting node: <src.node.class_node.ClassNode object at 0x10b016120>
+2025-03-22 12:39:35,947 - ManagerAgent - INFO - Processing query with todo manager
+2025-03-22 12:39:35,947 - ManagerAgent - INFO - Processing query with TodoManager: "the user new can not fire a shot to other opponent, it also can't jump'
+2025-03-22 12:39:35,947 - ManagerAgent - INFO - Executing tasks with TodoManager
+2025-03-22 12:42:24,427 - ManagerAgent - INFO - Task execution result: Completed 3 tasks, 4 tasks failed
+2025-03-22 12:42:24,428 - ManagerAgent - INFO - Tasks completed: 3/14
+2025-03-22 12:42:24,428 - ManagerAgent - INFO - Determining action based on query
+2025-03-22 12:42:32,005 - ManagerAgent - INFO - Decided action: debug
+2025-03-22 12:42:32,006 - ManagerAgent - INFO - Explanation: The user's query indicates that there is an issue with the functionality where a new user cannot fire a shot or jump. This suggests that there might be a bug or an error in the code that prevents these actions from being executed correctly. Debugging is the most appropriate action to identify and resolve the issue.
+2025-03-22 12:42:32,006 - ManagerAgent - INFO - Query processing result: Completed 3 tasks, 4 tasks failed
+2025-03-22 12:53:55,162 - ManagerAgent - INFO - Initializing ManagerAgent
+2025-03-22 12:53:55,162 - ManagerAgent - INFO - Creating decision agent
+2025-03-22 12:53:55,172 - ManagerAgent - INFO - Creating generate agent
+2025-03-22 12:53:55,181 - ManagerAgent - INFO - Creating execute agent
+2025-03-22 12:53:55,181 - ManagerAgent - INFO - Creating action executor
+2025-03-22 12:53:55,181 - ManagerAgent - INFO - Creating query analyzer
+2025-03-22 12:53:55,181 - ManagerAgent - INFO - Creating graph builder
+2025-03-22 12:53:55,181 - ManagerAgent - INFO - ManagerAgent initialization complete
+2025-03-22 12:54:03,206 - ManagerAgent - INFO - Building graph in parallel for project: /Users/newtonalbert/Desktop/CP/data scientist agent/sample/test
+2025-03-22 12:54:03,208 - ManagerAgent - INFO - Acquired graph lock for parallel building
+2025-03-22 12:55:05,508 - ManagerAgent - INFO - Built graph with 22 nodes
+2025-03-22 12:55:05,512 - ManagerAgent - INFO - Processing query: '"debug the program"' for project: /Users/newtonalbert/Desktop/CP/data scientist agent/sample/test
+2025-03-22 12:55:05,512 - ManagerAgent - DEBUG - Checking if directory is empty: /Users/newtonalbert/Desktop/CP/data scientist agent/sample/test
+2025-03-22 12:55:05,513 - ManagerAgent - DEBUG - Directory contains 7 items
+2025-03-22 12:55:05,514 - ManagerAgent - DEBUG - Directory contains non-hidden files
+2025-03-22 12:55:05,514 - ManagerAgent - INFO - Is empty project: False
+2025-03-22 12:55:05,514 - ManagerAgent - INFO - Existing graph provided: True
+2025-03-22 12:55:05,514 - ManagerAgent - INFO - Initializing TodoManager
+2025-03-22 12:55:05,579 - ManagerAgent - INFO - TodoManager initialized with 10 tools
+2025-03-22 12:55:05,579 - ManagerAgent - INFO - Finding starting node in the graph
+2025-03-22 12:55:19,375 - ManagerAgent - INFO - Found starting node: <src.node.function_node.FunctionNode object at 0x1060ae7b0>
+2025-03-22 12:55:19,376 - ManagerAgent - INFO - Processing query with todo manager
+2025-03-22 12:55:19,376 - ManagerAgent - INFO - Processing query with TodoManager: "debug the program"
+2025-03-22 12:55:19,376 - ManagerAgent - INFO - Executing tasks with TodoManager
+2025-03-22 12:59:28,527 - ManagerAgent - INFO - Task execution result: Completed 4 tasks, 3 tasks failed
+2025-03-22 12:59:28,528 - ManagerAgent - INFO - Tasks completed: 4/7
+2025-03-22 12:59:28,528 - ManagerAgent - INFO - Determining action based on query
+2025-03-22 12:59:36,128 - ManagerAgent - INFO - Decided action: debug
+2025-03-22 12:59:36,128 - ManagerAgent - INFO - Explanation: The user's query specifically mentions 'debug the program', which directly aligns with the 'debug' action. This action involves identifying and resolving issues or errors in the code to ensure it functions as intended.
+2025-03-22 12:59:36,129 - ManagerAgent - INFO - Query processing result: Completed 4 tasks, 3 tasks failed
+2025-03-22 15:56:45,745 - ManagerAgent - INFO - Initializing ManagerAgent
+2025-03-22 15:56:45,745 - ManagerAgent - INFO - Creating decision agent
+2025-03-22 15:56:45,754 - ManagerAgent - INFO - Creating generate agent
+2025-03-22 15:56:45,764 - ManagerAgent - INFO - Creating execute agent
+2025-03-22 15:56:45,764 - ManagerAgent - INFO - Creating action executor
+2025-03-22 15:56:45,764 - ManagerAgent - INFO - Creating query analyzer
+2025-03-22 15:56:45,764 - ManagerAgent - INFO - Creating graph builder
+2025-03-22 15:56:45,764 - ManagerAgent - INFO - ManagerAgent initialization complete
+2025-03-22 15:57:22,953 - ManagerAgent - INFO - Building graph in parallel for project: /Users/newtonalbert/Desktop/CP/data scientist agent/sample/test
+2025-03-22 15:57:22,954 - ManagerAgent - INFO - Acquired graph lock for parallel building
+2025-03-22 15:59:00,321 - ManagerAgent - INFO - Built graph with 24 nodes
+2025-03-22 15:59:00,326 - ManagerAgent - INFO - Processing query: '"debug the program such that it can restart after game over"' for project: /Users/newtonalbert/Desktop/CP/data scientist agent/sample/test
+2025-03-22 15:59:00,326 - ManagerAgent - DEBUG - Checking if directory is empty: /Users/newtonalbert/Desktop/CP/data scientist agent/sample/test
+2025-03-22 15:59:00,327 - ManagerAgent - DEBUG - Directory contains 7 items
+2025-03-22 15:59:00,327 - ManagerAgent - DEBUG - Directory contains non-hidden files
+2025-03-22 15:59:00,327 - ManagerAgent - INFO - Is empty project: False
+2025-03-22 15:59:00,328 - ManagerAgent - INFO - Existing graph provided: True
+2025-03-22 15:59:00,328 - ManagerAgent - INFO - Initializing TodoManager
+2025-03-22 15:59:00,393 - ManagerAgent - INFO - TodoManager initialized with 10 tools
+2025-03-22 15:59:00,393 - ManagerAgent - INFO - Finding starting node in the graph
+2025-03-22 15:59:15,580 - ManagerAgent - INFO - Found starting node: <src.node.class_node.ClassNode object at 0x111aa95b0>
+2025-03-22 15:59:15,580 - ManagerAgent - INFO - Processing query with todo manager
+2025-03-22 15:59:15,580 - ManagerAgent - INFO - Processing query with TodoManager: "debug the program such that it can restart after game over"
+2025-03-22 15:59:15,581 - ManagerAgent - INFO - Executing tasks with TodoManager
+2025-03-22 16:02:18,408 - ManagerAgent - INFO - Task execution result: Completed 1 tasks, 4 tasks failed
+2025-03-22 16:02:18,409 - ManagerAgent - INFO - Tasks completed: 1/5
+2025-03-22 16:02:18,409 - ManagerAgent - INFO - Determining action based on query
+2025-03-22 16:02:28,821 - ManagerAgent - INFO - Decided action: debug
+2025-03-22 16:02:28,822 - ManagerAgent - INFO - Explanation: The user's query specifically mentions debugging the program to enable it to restart after a game over. This indicates that there is likely an issue with the current implementation that prevents the program from restarting properly. The 'debug' action is the most appropriate as it involves identifying and fixing the issue in the existing code.
+2025-03-22 16:02:28,823 - ManagerAgent - INFO - Query processing result: Completed 1 tasks, 4 tasks failed
+2025-03-22 16:09:07,272 - ManagerAgent - INFO - Initializing ManagerAgent
+2025-03-22 16:09:07,273 - ManagerAgent - INFO - Creating decision agent
+2025-03-22 16:09:07,282 - ManagerAgent - INFO - Creating generate agent
+2025-03-22 16:09:07,291 - ManagerAgent - INFO - Creating execute agent
+2025-03-22 16:09:07,291 - ManagerAgent - INFO - Creating action executor
+2025-03-22 16:09:07,291 - ManagerAgent - INFO - Creating query analyzer
+2025-03-22 16:09:07,291 - ManagerAgent - INFO - Creating graph builder
+2025-03-22 16:09:07,291 - ManagerAgent - INFO - ManagerAgent initialization complete
+2025-03-22 16:09:24,588 - ManagerAgent - INFO - Building graph in parallel for project: /Users/newtonalbert/Desktop/CP/data scientist agent/sample/test
+2025-03-22 16:09:24,589 - ManagerAgent - INFO - Acquired graph lock for parallel building
+2025-03-22 16:11:41,300 - ManagerAgent - INFO - Built graph with 24 nodes
+2025-03-22 16:11:41,305 - ManagerAgent - INFO - Processing query: '"debug the program now after game over the player can't restart"' for project: /Users/newtonalbert/Desktop/CP/data scientist agent/sample/test
+2025-03-22 16:11:41,305 - ManagerAgent - DEBUG - Checking if directory is empty: /Users/newtonalbert/Desktop/CP/data scientist agent/sample/test
+2025-03-22 16:11:41,306 - ManagerAgent - DEBUG - Directory contains 7 items
+2025-03-22 16:11:41,307 - ManagerAgent - DEBUG - Directory contains non-hidden files
+2025-03-22 16:11:41,307 - ManagerAgent - INFO - Is empty project: False
+2025-03-22 16:11:41,307 - ManagerAgent - INFO - Existing graph provided: True
+2025-03-22 16:11:41,307 - ManagerAgent - INFO - Initializing TodoManager
+2025-03-22 16:11:41,377 - ManagerAgent - INFO - TodoManager initialized with 10 tools
+2025-03-22 16:11:41,377 - ManagerAgent - INFO - Finding starting node in the graph
+2025-03-22 16:11:56,508 - ManagerAgent - INFO - Found starting node: <src.node.function_node.FunctionNode object at 0x107209250>
+2025-03-22 16:11:56,508 - ManagerAgent - INFO - Processing query with todo manager
+2025-03-22 16:11:56,508 - ManagerAgent - INFO - Processing query with TodoManager: "debug the program now after game over the player can't restart"
+2025-03-22 16:11:56,508 - ManagerAgent - INFO - Executing tasks with TodoManager
+2025-03-22 16:21:46,336 - ManagerAgent - INFO - Task execution result: Completed 7 tasks, 1 tasks failed
+2025-03-22 16:21:46,336 - ManagerAgent - INFO - Tasks completed: 7/8
+2025-03-22 16:21:46,336 - ManagerAgent - INFO - Determining action based on query
+2025-03-22 16:21:57,769 - ManagerAgent - INFO - Decided action: debug
+2025-03-22 16:21:57,770 - ManagerAgent - INFO - Explanation: The user's query indicates an issue with the program where the player cannot restart after a game over. This suggests a bug or logical error in the code that needs to be identified and fixed. The 'debug' action is the most appropriate as it involves analyzing the code to locate and resolve the issue.
+2025-03-22 16:21:57,771 - ManagerAgent - INFO - Query processing result: Completed 7 tasks, 1 tasks failed
+2025-03-22 16:24:30,819 - ManagerAgent - INFO - Processing query: '"debug that the user can't see the shot please make the bullet red and blue corresponding to user's color"' for project: /Users/newtonalbert/Desktop/CP/data scientist agent/sample/test
+2025-03-22 16:24:30,823 - ManagerAgent - DEBUG - Checking if directory is empty: /Users/newtonalbert/Desktop/CP/data scientist agent/sample/test
+2025-03-22 16:24:30,824 - ManagerAgent - DEBUG - Directory contains 7 items
+2025-03-22 16:24:30,825 - ManagerAgent - DEBUG - Directory contains non-hidden files
+2025-03-22 16:24:30,825 - ManagerAgent - INFO - Is empty project: False
+2025-03-22 16:24:30,825 - ManagerAgent - INFO - Existing graph provided: True
+2025-03-22 16:24:30,825 - ManagerAgent - INFO - Updating graph in existing TodoManager
+2025-03-22 16:24:30,825 - ManagerAgent - INFO - Finding starting node in the graph
+2025-03-22 16:24:46,794 - ManagerAgent - INFO - Found starting node: <src.node.function_node.FunctionNode object at 0x10724d8b0>
+2025-03-22 16:24:46,795 - ManagerAgent - INFO - Processing query with todo manager
+2025-03-22 16:24:46,795 - ManagerAgent - INFO - Processing query with TodoManager: "debug that the user can't see the shot please make the bullet red and blue corresponding to user's color"
+2025-03-22 16:24:46,795 - ManagerAgent - INFO - Executing tasks with TodoManager
+2025-03-22 16:31:28,440 - ManagerAgent - INFO - Task execution result: Completed 4 tasks, 1 tasks failed
+2025-03-22 16:31:28,441 - ManagerAgent - INFO - Tasks completed: 4/13
+2025-03-22 16:31:28,441 - ManagerAgent - INFO - Determining action based on query
+2025-03-22 16:31:38,704 - ManagerAgent - INFO - Decided action: modify
+2025-03-22 16:31:38,706 - ManagerAgent - INFO - Explanation: The query involves changing the color of bullets to red and blue based on the user's color, which implies modifying existing code to implement this feature. Debugging is also mentioned, but the primary task is to alter the bullet color, which falls under modifying existing code.
+2025-03-22 16:31:38,707 - ManagerAgent - INFO - Query processing result: Completed 4 tasks, 1 tasks failed
+2025-03-22 16:34:45,183 - ManagerAgent - INFO - Processing query: '"the modify bullet is not I guess you have to build a bullet class and then debug the bullet problem which the bullet problem is it doesn't show it on the screen please fix this issue"' for project: /Users/newtonalbert/Desktop/CP/data scientist agent/sample/test
+2025-03-22 16:34:45,186 - ManagerAgent - DEBUG - Checking if directory is empty: /Users/newtonalbert/Desktop/CP/data scientist agent/sample/test
+2025-03-22 16:34:45,186 - ManagerAgent - DEBUG - Directory contains 7 items
+2025-03-22 16:34:45,186 - ManagerAgent - DEBUG - Directory contains non-hidden files
+2025-03-22 16:34:45,187 - ManagerAgent - INFO - Is empty project: False
+2025-03-22 16:34:45,187 - ManagerAgent - INFO - Existing graph provided: True
+2025-03-22 16:34:45,187 - ManagerAgent - INFO - Updating graph in existing TodoManager
+2025-03-22 16:34:45,187 - ManagerAgent - INFO - Finding starting node in the graph
+2025-03-22 16:35:00,846 - ManagerAgent - INFO - Found starting node: <src.node.class_node.ClassNode object at 0x1071f6490>
+2025-03-22 16:35:00,846 - ManagerAgent - INFO - Processing query with todo manager
+2025-03-22 16:35:00,846 - ManagerAgent - INFO - Processing query with TodoManager: "the modify bullet is not I guess you have to build a bullet class and then debug the bullet problem which the bullet problem is it doesn't show it on the screen please fix this issue"
+2025-03-22 16:35:00,847 - ManagerAgent - INFO - Executing tasks with TodoManager
+2025-03-22 16:42:21,175 - ManagerAgent - INFO - Task execution result: Completed 4 tasks, 1 tasks failed
+2025-03-22 16:42:21,176 - ManagerAgent - INFO - Tasks completed: 4/18
+2025-03-22 16:42:21,176 - ManagerAgent - INFO - Determining action based on query
+2025-03-22 16:42:32,328 - ManagerAgent - INFO - Decided action: debug
+2025-03-22 16:42:32,330 - ManagerAgent - INFO - Explanation: The user is describing an issue where a bullet is not being displayed on the screen. This suggests that there is a problem with the rendering or logic of the bullet class. The most appropriate action is to debug the existing code to identify and fix the issue causing the bullet not to appear on the screen.
+2025-03-22 16:42:32,330 - ManagerAgent - INFO - Query processing result: Completed 4 tasks, 1 tasks failed
+2025-03-22 16:44:59,082 - ManagerAgent - INFO - Processing query: ''the user should be able to use space and enter to shout the bullet now it done's show the bullet on screen you should fix it'' for project: /Users/newtonalbert/Desktop/CP/data scientist agent/sample/test
+2025-03-22 16:44:59,083 - ManagerAgent - DEBUG - Checking if directory is empty: /Users/newtonalbert/Desktop/CP/data scientist agent/sample/test
+2025-03-22 16:44:59,083 - ManagerAgent - DEBUG - Directory contains 8 items
+2025-03-22 16:44:59,084 - ManagerAgent - DEBUG - Directory contains non-hidden files
+2025-03-22 16:44:59,084 - ManagerAgent - INFO - Is empty project: False
+2025-03-22 16:44:59,084 - ManagerAgent - INFO - Existing graph provided: True
+2025-03-22 16:44:59,084 - ManagerAgent - INFO - Updating graph in existing TodoManager
+2025-03-22 16:44:59,084 - ManagerAgent - INFO - Finding starting node in the graph
+2025-03-22 16:45:16,449 - ManagerAgent - INFO - Found starting node: <src.node.function_node.FunctionNode object at 0x1071f6ad0>
+2025-03-22 16:45:16,449 - ManagerAgent - INFO - Processing query with todo manager
+2025-03-22 16:45:16,449 - ManagerAgent - INFO - Processing query with TodoManager: 'the user should be able to use space and enter to shout the bullet now it done's show the bullet on screen you should fix it'
+2025-03-22 16:45:16,449 - ManagerAgent - INFO - Executing tasks with TodoManager
