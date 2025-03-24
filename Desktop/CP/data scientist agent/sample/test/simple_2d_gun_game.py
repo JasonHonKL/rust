@@ -42,7 +42,7 @@ class Player(pygame.sprite.Sprite):
             self.rect.x += self.speed
 
     def shoot(self):
-        bullet = Bullet(self.rect.centerx, self.rect.top)
+        bullet = Bullet(self.rect.centerx, self.rect.bottom)
         all_sprites.add(bullet)
         bullets.add(bullet)
 
@@ -55,11 +55,11 @@ class Bullet(pygame.sprite.Sprite):
         self.rect = self.image.get_rect()
         self.rect.centerx = x
         self.rect.bottom = y
-        self.speed = -10  # Negative speed to move upwards
+        self.speed = 10  # Positive speed to move downwards
 
     def update(self):
         self.rect.y += self.speed
-        if self.rect.bottom < 0:  # Check if the bullet is off-screen
+        if self.rect.top > SCREEN_HEIGHT:  # Check if the bullet is off-screen
             self.kill()
 
 # Target class

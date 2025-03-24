@@ -254,3 +254,86 @@ AttributeError: 'ClassNode' object has no attribute 'key'
 2025-03-22 16:45:16,449 - ManagerAgent - INFO - Processing query with todo manager
 2025-03-22 16:45:16,449 - ManagerAgent - INFO - Processing query with TodoManager: 'the user should be able to use space and enter to shout the bullet now it done's show the bullet on screen you should fix it'
 2025-03-22 16:45:16,449 - ManagerAgent - INFO - Executing tasks with TodoManager
+2025-03-22 16:54:58,510 - ManagerAgent - INFO - Task execution result: Completed 7 tasks, 3 tasks failed
+2025-03-22 16:54:58,511 - ManagerAgent - INFO - Tasks completed: 7/28
+2025-03-22 16:54:58,511 - ManagerAgent - INFO - Determining action based on query
+2025-03-22 16:55:09,201 - ManagerAgent - INFO - Decided action: debug
+2025-03-22 16:55:09,202 - ManagerAgent - INFO - Explanation: The user's query indicates that there is an issue with the functionality where the bullet should be displayed on the screen when the user uses space and enter keys. Since the bullet is not showing up as expected, the most appropriate action is to debug the existing code to identify and fix the issue.
+2025-03-22 16:55:09,202 - ManagerAgent - INFO - Query processing result: Completed 7 tasks, 3 tasks failed
+2025-03-23 11:52:34,175 - ManagerAgent - INFO - Initializing ManagerAgent
+2025-03-23 11:52:34,176 - ManagerAgent - INFO - Creating decision agent
+2025-03-23 11:52:34,185 - ManagerAgent - INFO - Creating generate agent
+2025-03-23 11:52:34,194 - ManagerAgent - INFO - Creating execute agent
+2025-03-23 11:52:34,194 - ManagerAgent - INFO - Creating action executor
+2025-03-23 11:52:34,194 - ManagerAgent - INFO - Creating query analyzer
+2025-03-23 11:52:34,195 - ManagerAgent - INFO - Creating graph builder
+2025-03-23 11:52:34,195 - ManagerAgent - INFO - ManagerAgent initialization complete
+2025-03-23 11:52:51,011 - ManagerAgent - INFO - Building graph in parallel for project: /Users/newtonalbert/Desktop/CP/data scientist agent/sample/test
+2025-03-23 11:52:51,012 - ManagerAgent - INFO - Acquired graph lock for parallel building
+2025-03-23 11:53:58,205 - ManagerAgent - INFO - Built graph with 30 nodes
+2025-03-23 11:53:58,211 - ManagerAgent - INFO - Processing query: '"please debug the program now I can't see the bullet"' for project: /Users/newtonalbert/Desktop/CP/data scientist agent/sample/test
+2025-03-23 11:53:58,211 - ManagerAgent - DEBUG - Checking if directory is empty: /Users/newtonalbert/Desktop/CP/data scientist agent/sample/test
+2025-03-23 11:53:58,212 - ManagerAgent - DEBUG - Directory contains 9 items
+2025-03-23 11:53:58,212 - ManagerAgent - DEBUG - Directory contains non-hidden files
+2025-03-23 11:53:58,212 - ManagerAgent - INFO - Is empty project: False
+2025-03-23 11:53:58,212 - ManagerAgent - INFO - Existing graph provided: True
+2025-03-23 11:53:58,212 - ManagerAgent - INFO - Initializing TodoManager
+2025-03-23 11:53:58,278 - ManagerAgent - INFO - TodoManager initialized with 10 tools
+2025-03-23 11:53:58,278 - ManagerAgent - INFO - Finding starting node in the graph
+2025-03-23 11:54:12,771 - ManagerAgent - INFO - Found starting node: <src.node.function_node.FunctionNode object at 0x11245f6f0>
+2025-03-23 11:54:12,772 - ManagerAgent - INFO - Processing query with todo manager
+2025-03-23 11:54:12,772 - ManagerAgent - INFO - Processing query with TodoManager: "please debug the program now I can't see the bullet"
+2025-03-23 11:54:12,772 - ManagerAgent - INFO - Executing tasks with TodoManager
+2025-03-23 11:58:24,338 - ManagerAgent - INFO - Task execution result: Completed 4 tasks, 1 tasks failed
+2025-03-23 11:58:24,338 - ManagerAgent - INFO - Tasks completed: 4/5
+2025-03-23 11:58:24,338 - ManagerAgent - INFO - Determining action based on query
+2025-03-23 11:58:31,215 - ManagerAgent - INFO - Decided action: debug
+2025-03-23 11:58:31,215 - ManagerAgent - INFO - Explanation: The user's query indicates a problem with the program where they cannot see the bullet, suggesting a potential issue with rendering or display logic. The 'debug' action is the most appropriate as it involves identifying and fixing issues in the existing code.
+2025-03-23 11:58:31,215 - ManagerAgent - INFO - Query processing result: Completed 4 tasks, 1 tasks failed
+2025-03-24 11:47:13,198 - ManagerAgent - INFO - Initializing ManagerAgent
+2025-03-24 11:47:13,200 - ManagerAgent - INFO - Creating decision agent
+2025-03-24 11:47:13,209 - ManagerAgent - INFO - Creating generate agent
+2025-03-24 11:47:13,218 - ManagerAgent - INFO - Creating execute agent
+2025-03-24 11:47:13,218 - ManagerAgent - INFO - Creating action executor
+2025-03-24 11:47:13,218 - ManagerAgent - INFO - Creating query analyzer
+2025-03-24 11:47:13,218 - ManagerAgent - INFO - Creating graph builder
+2025-03-24 11:47:13,218 - ManagerAgent - INFO - ManagerAgent initialization complete
+2025-03-24 11:47:19,212 - ManagerAgent - INFO - Building graph in parallel for project: /Users/newtonalbert/Desktop/CP/data scientist agent/sample/test
+2025-03-24 11:47:19,213 - ManagerAgent - INFO - Acquired graph lock for parallel building
+2025-03-24 11:50:33,804 - ManagerAgent - INFO - Built graph with 30 nodes
+2025-03-24 11:50:33,811 - ManagerAgent - INFO - Processing query: '"add feature one more player"' for project: /Users/newtonalbert/Desktop/CP/data scientist agent/sample/test
+2025-03-24 11:50:33,811 - ManagerAgent - DEBUG - Checking if directory is empty: /Users/newtonalbert/Desktop/CP/data scientist agent/sample/test
+2025-03-24 11:50:33,812 - ManagerAgent - DEBUG - Directory contains 9 items
+2025-03-24 11:50:33,812 - ManagerAgent - DEBUG - Directory contains non-hidden files
+2025-03-24 11:50:33,812 - ManagerAgent - INFO - Is empty project: False
+2025-03-24 11:50:33,812 - ManagerAgent - INFO - Existing graph provided: True
+2025-03-24 11:50:33,812 - ManagerAgent - INFO - Initializing TodoManager
+2025-03-24 11:50:33,891 - ManagerAgent - INFO - TodoManager initialized with 10 tools
+2025-03-24 11:50:33,892 - ManagerAgent - INFO - Finding starting node in the graph
+2025-03-24 11:50:49,673 - ManagerAgent - INFO - Found starting node: <src.node.function_node.FunctionNode object at 0x10667d450>
+2025-03-24 11:50:49,673 - ManagerAgent - INFO - Processing query with todo manager
+2025-03-24 11:50:49,674 - ManagerAgent - INFO - Processing query with TodoManager: "add feature one more player"
+2025-03-24 11:50:49,674 - ManagerAgent - INFO - Executing tasks with TodoManager
+2025-03-24 11:56:46,688 - ManagerAgent - ERROR - Error processing query with TodoManager: name 'f' is not defined
+Traceback (most recent call last):
+  File "/Users/newtonalbert/Desktop/CP/data scientist agent/knowledge_graph_llm/knowledge_graph_llm/src/agents/manager_agent.py", line 374, in _process_query_with_todo_manager
+    result = self.todo_manager.execute_list_of_task(query)
+  File "/Users/newtonalbert/Desktop/CP/data scientist agent/knowledge_graph_llm/knowledge_graph_llm/src/agents/todoagent/todoAgent.py", line 531, in execute_list_of_task
+    execution_results = self._execute_tasks_in_dependency_order()
+  File "/Users/newtonalbert/Desktop/CP/data scientist agent/knowledge_graph_llm/knowledge_graph_llm/src/agents/todoagent/todoAgent.py", line 817, in _execute_tasks_in_dependency_order
+    retry_result = self._retry_failed_task(next_task, result)
+  File "/Users/newtonalbert/Desktop/CP/data scientist agent/knowledge_graph_llm/knowledge_graph_llm/src/agents/todoagent/todoAgent.py", line 970, in _retry_failed_task
+    return self._execute_modify_code(task_description, execution_details)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/newtonalbert/Desktop/CP/data scientist agent/knowledge_graph_llm/knowledge_graph_llm/src/agents/todoagent/todoAgent.py", line 1491, in _execute_modify_code
+    context_node = self.codesearcher.search_relevant_entity(details, os.getcwd())
+  File "/Users/newtonalbert/Desktop/CP/data scientist agent/knowledge_graph_llm/knowledge_graph_llm/src/knowledge_graph/searcher.py", line 41, in search_relevant_entity
+    target_file, functions = self._navigate_directory(query, project_root)
+                             ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/newtonalbert/Desktop/CP/data scientist agent/knowledge_graph_llm/knowledge_graph_llm/src/knowledge_graph/searcher.py", line 90, in _navigate_directory
+    next_item = self._select_directory_item(query, current_path, dir_structure)
+  File "/Users/newtonalbert/Desktop/CP/data scientist agent/knowledge_graph_llm/knowledge_graph_llm/src/knowledge_graph/searcher.py", line 174, in _select_directory_item
+    files_str = "\n".join([f"📄 {f}" for d in dir_structure["files"]])
+                                 ^
+NameError: name 'f' is not defined
+2025-03-24 11:56:46,696 - ManagerAgent - INFO - Query processing result: Error processing query with TodoManager: name 'f' is not defined

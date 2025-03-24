@@ -55,11 +55,11 @@ class Bullet(pygame.sprite.Sprite):
         self.rect = self.image.get_rect()
         self.rect.centerx = x
         self.rect.bottom = y
-        self.speed = -10
+        self.speed = -10  # Negative speed to move upwards
 
     def update(self):
         self.rect.y += self.speed
-        if self.rect.bottom < 0:
+        if self.rect.bottom < 0:  # Check if the bullet is off-screen
             self.kill()
 
 # Target class
