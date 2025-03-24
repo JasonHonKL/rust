@@ -1,4 +1,3 @@
-```jsx
 import React, { useState } from 'react';
 import axios from 'axios';
 import { Button, TextField, Box, Typography, Snackbar } from '@mui/material';
@@ -72,4 +71,3 @@ const NewPlayerFeature = () => {
 };
 
 export default NewPlayerFeature;
-```

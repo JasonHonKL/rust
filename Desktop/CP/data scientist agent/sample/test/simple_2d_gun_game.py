@@ -13,6 +13,7 @@ WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
 RED = (255, 0, 0)
 BLUE = (0, 0, 255)
+GREEN = (0, 255, 0)
 
 # Initialize screen
 screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
@@ -42,7 +43,7 @@ class Player(pygame.sprite.Sprite):
             self.rect.x += self.speed
 
     def shoot(self):
-        bullet = Bullet(self.rect.centerx, self.rect.bottom)
+        bullet = Bullet(self.rect.centerx, self.rect.top)
         all_sprites.add(bullet)
         bullets.add(bullet)
 
@@ -55,11 +56,11 @@ class Bullet(pygame.sprite.Sprite):
         self.rect = self.image.get_rect()
         self.rect.centerx = x
         self.rect.bottom = y
-        self.speed = 10  # Positive speed to move downwards
+        self.speed = -10  # Negative speed to move upwards
 
     def update(self):
         self.rect.y += self.speed
-        if self.rect.top > SCREEN_HEIGHT:  # Check if the bullet is off-screen
+        if self.rect.bottom < 0:  # Check if the bullet is off-screen
             self.kill()
 
 # Target class
@@ -83,18 +84,19 @@ class Target(pygame.sprite.Sprite):
 # ScoreBoard class
 class ScoreBoard:
     def __init__(self):
-        self.score = 0
+        self.scores = [0, 0, 0]  # Scores for Player 1, Player 2, Player 3
         self.font = pygame.font.SysFont(None, 36)
 
-    def increment_score(self):
-        self.score += 1
+    def increment_score(self, player_index):
+        self.scores[player_index] += 1
 
     def draw(self, screen):
-        score_text = self.font.render(f"Score: {self.score}", True, BLACK)
-        screen.blit(score_text, (10, 10))
+        for i, score in enumerate(self.scores):
+            score_text = self.font.render(f"Player {i+1}: {score}", True, BLACK)
+            screen.blit(score_text, (10, 10 + i * 30))
 
-# TwoPlayerGame class
-class TwoPlayerGame:
+# ThreePlayerGame class
+class ThreePlayerGame:
     def __init__(self):
         self.player1 = Player(
             RED,
@@ -106,14 +108,23 @@ class TwoPlayerGame:
         )
         self.player2 = Player(
             BLUE,
-            3 * SCREEN_WIDTH // 4,
+            SCREEN_WIDTH // 2,
             SCREEN_HEIGHT - 50,
             pygame.K_LEFT,
             pygame.K_RIGHT,
             pygame.K_UP,
         )
+        self.player3 = Player(
+            GREEN,
+            3 * SCREEN_WIDTH // 4,
+            SCREEN_HEIGHT - 50,
+            pygame.K_j,
+            pygame.K_l,
+            pygame.K_i,
+        )
         all_sprites.add(self.player1)
         all_sprites.add(self.player2)
+        all_sprites.add(self.player3)
 
 # Sprite groups
 all_sprites = pygame.sprite.Group()
@@ -121,7 +132,7 @@ bullets = pygame.sprite.Group()
 targets = pygame.sprite.Group()
 
 # Create game instance
-game = TwoPlayerGame()
+game = ThreePlayerGame()
 
 # Create targets
 for _ in range(10):
@@ -149,14 +160,16 @@ while running:
                 game.player1.shoot()
             if event.key == game.player2.shoot_key:
                 game.player2.shoot()
+            if event.key == game.player3.shoot_key:
+                game.player3.shoot()
             if game_over and event.key == pygame.K_r:  # Restart the game if 'R' is pressed
                 game_over = False
                 escaped_targets = 0
-                score_board.score = 0
+                score_board.scores = [0, 0, 0]
                 all_sprites.empty()
                 bullets.empty()
                 targets.empty()
-                game = TwoPlayerGame()
+                game = ThreePlayerGame()
                 for _ in range(10):
                     target = Target()
                     all_sprites.add(target)
@@ -169,7 +182,13 @@ while running:
         # Check for collisions between bullets and targets
         hits = pygame.sprite.groupcollide(bullets, targets, True, True)
         for hit in hits:
-            score_board.increment_score()
+            for bullet in hits[hit]:
+                if bullet.rect.colliderect(game.player1.rect):
+                    score_board.increment_score(0)
+                elif bullet.rect.colliderect(game.player2.rect):
+                    score_board.increment_score(1)
+                elif bullet.rect.colliderect(game.player3.rect):
+                    score_board.increment_score(2)
             target = Target()
             all_sprites.add(target)
             targets.add(target)

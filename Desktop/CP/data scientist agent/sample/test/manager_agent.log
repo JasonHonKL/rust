@@ -337,3 +337,33 @@ Traceback (most recent call last):
                                  ^
 NameError: name 'f' is not defined
 2025-03-24 11:56:46,696 - ManagerAgent - INFO - Query processing result: Error processing query with TodoManager: name 'f' is not defined
+2025-03-24 14:35:07,216 - ManagerAgent - INFO - Initializing ManagerAgent
+2025-03-24 14:35:07,217 - ManagerAgent - INFO - Creating decision agent
+2025-03-24 14:35:07,226 - ManagerAgent - INFO - Creating generate agent
+2025-03-24 14:35:07,236 - ManagerAgent - INFO - Creating execute agent
+2025-03-24 14:35:07,236 - ManagerAgent - INFO - Creating action executor
+2025-03-24 14:35:07,236 - ManagerAgent - INFO - Creating query analyzer
+2025-03-24 14:35:07,236 - ManagerAgent - INFO - Creating graph builder
+2025-03-24 14:35:07,236 - ManagerAgent - INFO - ManagerAgent initialization complete
+2025-03-24 14:35:31,468 - ManagerAgent - INFO - Building graph in parallel for project: /Users/newtonalbert/Desktop/CP/data scientist agent/sample/test
+2025-03-24 14:35:31,470 - ManagerAgent - INFO - Acquired graph lock for parallel building
+2025-03-24 14:45:57,988 - ManagerAgent - INFO - Built graph with 35 nodes
+2025-03-24 14:45:57,994 - ManagerAgent - INFO - Processing query: '"change to a three player game"' for project: /Users/newtonalbert/Desktop/CP/data scientist agent/sample/test
+2025-03-24 14:45:57,995 - ManagerAgent - DEBUG - Checking if directory is empty: /Users/newtonalbert/Desktop/CP/data scientist agent/sample/test
+2025-03-24 14:45:57,996 - ManagerAgent - DEBUG - Directory contains 9 items
+2025-03-24 14:45:57,996 - ManagerAgent - DEBUG - Directory contains non-hidden files
+2025-03-24 14:45:57,996 - ManagerAgent - INFO - Is empty project: False
+2025-03-24 14:45:57,996 - ManagerAgent - INFO - Existing graph provided: True
+2025-03-24 14:45:57,996 - ManagerAgent - INFO - Initializing TodoManager
+2025-03-24 14:45:58,064 - ManagerAgent - INFO - TodoManager initialized with 10 tools
+2025-03-24 14:45:58,064 - ManagerAgent - INFO - Finding starting node in the graph
+2025-03-24 14:46:13,745 - ManagerAgent - INFO - Found starting node: <src.node.class_node.ClassNode object at 0x1127bc950>
+2025-03-24 14:46:13,745 - ManagerAgent - INFO - Processing query with todo manager
+2025-03-24 14:46:13,745 - ManagerAgent - INFO - Processing query with TodoManager: "change to a three player game"
+2025-03-24 14:46:13,745 - ManagerAgent - INFO - Executing tasks with TodoManager
+2025-03-24 14:59:26,063 - ManagerAgent - INFO - Task execution result: Completed 6 tasks, 2 tasks failed
+2025-03-24 14:59:26,063 - ManagerAgent - INFO - Tasks completed: 6/8
+2025-03-24 14:59:26,064 - ManagerAgent - INFO - Determining action based on query
+2025-03-24 14:59:36,631 - ManagerAgent - INFO - Decided action: modify
+2025-03-24 14:59:36,632 - ManagerAgent - INFO - Explanation: The query 'change to a three player game' suggests that the user wants to alter the existing game code to support three players instead of the current setup. This involves modifying the existing code to adjust player-related logic, such as initialization, turn management, and scoring.
+2025-03-24 14:59:36,632 - ManagerAgent - INFO - Query processing result: Completed 6 tasks, 2 tasks failed
