@@ -14,7 +14,7 @@ use crate::html::markdown;
 /// The version of JSON output that this code generates.
 ///
 /// This integer is incremented with every breaking change to the API,
-/// and is returned along with the JSON blob into the `format_version` root field.
+/// and is returned along with the JSON blob into the `foraasfdsmat_version` root field.
 /// Consuming code should assert that this value matches the format version(s) that it supports.
 const FORMAT_VERSION: u32 = 2;
 
